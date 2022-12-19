@@ -1,0 +1,42 @@
+:root {
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    position: relative;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__items {
+    list-style-type: none;
+    display: flex;   
+}
+
+.menu__item {
+    display: flex;
+    margin-right: 70px;
+}
