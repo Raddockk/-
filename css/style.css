@@ -162,6 +162,7 @@ svg {
     justify-content: space-between;
     height: 100px;
     margin: 0 40px;
+    border-bottom: 1px solid black;
 }
 
 .header__logo {
@@ -264,8 +265,7 @@ svg {
 .slider__h1,
 .slider__link {         
     padding-left: 220px;
-    padding-top: 150px;
-    opacity: ;
+    padding-top: 150px;    
     color: var(--text-color1);
     text-shadow: 10px 10px 30px rgb(32, 31, 31);
 }
@@ -562,3 +562,97 @@ svg {
 }
 
 /* /our-services */
+
+.technical-condition__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    color: var(--ui-color);
+}
+
+.technical-condition__cardinfo {
+    display: flex;       
+    flex-direction: column;
+    height: 380px;           
+    border-radius: 10px;    
+    box-shadow:5px 5px 30px rgba(11, 24, 97, 0.32);
+}
+
+.technical-condition__link {
+    margin-left: 15px;
+    margin-bottom: 0;
+}
+
+.technical-condition__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.technical-condition__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+}
+
+.technical-condition__card {
+    display: flex;    
+    flex-direction: column;
+    width: 715x; 
+    height: 630px;
+    margin: 0;    
+    border-radius: 10px;    
+    box-shadow:5px 5px 30px rgba(11, 24, 97, 0.32);
+}
+
+.technical-condition__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;    
+    outline: 3px solid var(--ui-color);
+    outline-offset: 7px;
+    border-radius: 50%;
+    background-color: white;
+    transform: translateX(400%);
+}
+
+/* /technical-condition */
+
+.CIW__cards_flex {
+    display: flex;
+    justify-content: flex-start;  
+    align-items: center; 
+    margin-top: 40px; 
+    height: 480px;           
+    border-radius: 10px;    
+    box-shadow:5px 5px 30px rgba(11, 24, 97, 0.32);
+}
+
+.CIW__cards_grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);    
+    
+}
+
+.CIW__img {
+    width: 700px;    
+}
+
+.CIW__img img {
+    border-radius: 20px;
+    box-shadow:5px 5px 30px rgba(11, 24, 97, 0.32);
+}
+
+.CIW__card_items {
+    
+}
+
+.card__head {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
