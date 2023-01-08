@@ -51,12 +51,10 @@
                         </li>
                         <li class="menu__item">
                             <a href="/CIW.html" class="menu__link subtitle hover-link">СМР</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="/contacts.html" class="menu__link subtitle hover-link">Контакты</a>
-                        </li>
-                    </ul>
+                        </li>                        
+                    </ul>                    
                 </nav>
+                <a href="#" class="header__btn button subtitle" id="call-request">Оставить заявку</a> 
                 <!-- /header__menu -->
             </div>          
         </div>  
@@ -215,7 +213,7 @@
                 </div> 
                 <!-- /we-bring-light__flex -->
                 <div class="start-now">
-                    <a href="#" class="start-now__btn button body1">Начните сейчас</a>  
+                    <a href="#" class="start-now__btn button body1" id="call-request_2">Оставить заявку</a>  
                 </div>                             
             </div>
             <!-- /container -->
@@ -248,6 +246,35 @@
         <!-- /container -->
     </footer>
     <!-- /footer -->
+    <div class="modal-window" id="call-window">
+        <div class="window__overlay" id="call-overlay"></div>
+        <div class="window__content">
+            <button class="window__close" id="close-window">
+                <span></span>
+            </button>
+            <h3 class="window__head h3">Оставьте заявку</h3>
+            <form action="" class="form">
+                <fieldset class="form__group">                    
+                    <input type="text" class="form__input" name="name" placeholder="ФИО">
+                </fieldset>
+                <fieldset class="form__group">                    
+                    <input type="tel" class="form__input" name="phone" placeholder="Номер телефона">
+                </fieldset>
+                <fieldset class="form__group">                    
+                    <input type="email" class="form__input" name="email" placeholder="Электронная почта">
+                </fieldset>
+                <fieldset class="form__group">       
+                    <textarea class="form__input message" name="" id="" cols="30" rows="10" placeholder="Оставьте сообщение"></textarea>
+                </fieldset>
+                <button class="form__submit body1 button" id="submit-btn">Отправить</button>
+                <p class="body3 form__caption">Нажимая на кнопку, Вы подтверждаете, что даете согласие на обработку Ваших персональных данных </p>
+            </form>
+            <!-- /form -->
+        </div>
+        <!-- /window__content -->
+        <script src="/js/modal-window.js"></script>
+    </div>
+    <!-- /modal-window -->
     <script src="/js/JQuery.js"></script>
     <script src="/slick/slick.min.js"></script>
     <script src="/js/main.js"></script>

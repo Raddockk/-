@@ -35,10 +35,11 @@
 }
 
 :root {
+    --border-color: #888888;
     --ui-color:#F47220;
     --text-color1: #fcef42e5;
     --text-color2:#444444;
-    --footer-background: #228cafb7;
+    --footer-background: #1e90b652;
 }
 
 *,
@@ -112,6 +113,13 @@ svg {
     font-weight: 400;
     font-style: normal;
     font-size: 1.25rem;
+}
+
+.body3 {
+    font-family: 'Proxima Nova Regular';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.75rem;
 }
 
 .button {   
@@ -218,6 +226,15 @@ svg {
    
 }
 
+.header__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;    
+    height: 40px;  
+    color: black;
+}
+
 .slider {  
     max-width: 1520px;
     width: 100%;         
@@ -294,8 +311,7 @@ svg {
 .about-us__img img {
     border-radius: 20px ;
     box-shadow:5px 5px 30px rgba(11, 24, 97, 0.32);
-    height: 700px;
-    width: 500px;
+    height: 700px;    
 }
 
 .about-us__txt {
@@ -655,4 +671,201 @@ svg {
 .card__head {
     margin-top: 20px;
     margin-bottom: 0;
+}
+
+/* /CIW */
+
+.modal-window {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-window_active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.window__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .5;
+}
+
+.window__content {
+    position: relative;
+    width: 500px;
+    height: 600px;
+    border-radius: 20px;
+    padding: 30px 20px;
+    background-color: white;
+}
+
+.window__close {
+    position: absolute;
+  bottom: 100%;
+  left: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.window__close span {
+    position: relative;
+  display: block;
+  width: 30px;
+  height: 1px;
+}
+
+.window__close span::before,
+.window__close span::after {
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  content: '';
+  transform-origin: center center;
+}
+
+.window__close span::before {
+    transform: rotate(45deg);
+  }
+  
+  .window__close span::after {
+    transform: rotate(-45deg);
+  }
+  
+  .window__close:hover span::before,
+  .window__close:hover span::after {
+    background-color: var(--ui-color);
+  }
+
+.window__head {
+    text-align: center;
+    margin: 10px;
+    color:var(--ui-color);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__group {
+    width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  border: 0;
+}
+
+.form__group:last-child {
+    margin-bottom: 0;
+}
+
+.message {
+    height: 200px;    
+    resize: none;
+}
+
+.form__input {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 0.875rem;
+    line-height: 120%;
+    color: black;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+.form__input::placeholder {
+    color:var(--border-color);
+}
+
+.form__submit {
+    max-width: 200px;
+    width: 100%;
+    height: 50px;
+}
+
+.form__caption {
+    color: var(--border-color);    
+    opacity: .7;
+}
+
+/* /modal-window */
+
+@media (max-width:1600px) {
+    .container {
+        max-width: 1440px ;
+        width: 100%;
+    }
+
+    .h1 {
+        font-size: 3.79rem;
+    }
+
+    .h2 {
+        font-size: 3.31rem;
+    }
+
+    .h3 {
+        font-size: 1.9rem;
+    }
+
+    .subtitle {
+       font-size: 1.18rem ; 
+    }
+
+    .body1 {
+        font-size: 1.37rem;
+    }
+
+    .body2 {
+        font-size: 1.18rem;
+    }
+
+    .body3 {
+        font-size: 0.71rem;
+    }
+    
+    .menu__item {
+        margin-right: 60px;
+    }
+
+    .slider__link,
+    .slider__h1 {
+        padding-left: 205px;
+        padding-top: 140px;
+    }
+
+    .about-us__img img {
+        height: 630px;
+    }
+
+    .what-we-do__grid {
+        gap: 60px;
+    }
 }

@@ -37,22 +37,20 @@
                 <nav class="header__menu">                
                     <ul class="menu__items">
                         <li class="menu__item">
-                            <a href="/main.html" class="menu__link subtitle hover-link">Главная</a>
+                            <a href="/main.html" class="menu__link subtitle hover-link ">Главная</a>
                         </li>                       
                         <li class="menu__item">
-                            <a href="/our-services.html" class="menu__link subtitle hover-link">Наши услуги</a>
+                            <a href="/our-services.html" class="menu__link subtitle hover-link ">Наши услуги</a>
                         </li>
                         <li class="menu__item">
-                            <a href="/technical-conditions.html" class="menu__link subtitle active-page">Получение тех.условий</a>
+                            <a href="/technical-conditions.html" class="menu__link subtitle  active-page ">Получение тех.условий</a>
                         </li>
                         <li class="menu__item">
                             <a href="/CIW.html" class="menu__link subtitle hover-link">СМР</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="/contacts.html" class="menu__link subtitle hover-link">Контакты</a>
-                        </li>
-                    </ul>
+                        </li>                        
+                    </ul>                    
                 </nav>
+                <a href="#" class="header__btn button subtitle" id="call-request">Оставить заявку</a> 
                 <!-- /header__menu -->
             </div>          
         </div>  
@@ -63,18 +61,7 @@
         <section class="technical-condition">
             <div class="container">
                 <h1 class="h1 our-services" style="margin-bottom: 0;">Технические <span class="service__link">условия</span></h1>
-                <p class="our-services body1">первый шаг к электрофикации</p>
-                <div class="technical-condition__important">
-                    <h3 class="technical-condition__info h3">Важная информация</h3>
-                    <article class="technical-condition__cardinfo">
-                        <p class="technical-condition__link body1">На сегодняшний день не действуют льготные тарифы на мощность в сетевых организациях</p>
-                        <p class="technical-condition__link body1">С 1 июля 2022 года стоимость подключения к электросетям по тарифу начинается от 3000 рублей за 1 КВт </p>
-                        <p class="technical-condition__link body1">С 1 июля 2022 года заявитель оплачивает до 70% стоимости строительства, реконструкции необходимых электросетевой организации для подключения заявителя</p>
-                        <p class="technical-condition__link body1">Не надо забывать о работах, которые необходимо выполнить заявителю согласно Тех. Условиям. Нередко они бывают дороже самого тарифа за мощность </p>
-                        <p class="technical-condition__link body1">Работы со своей стороны сетевая организация может выполнять до 2-х лет</p>
-                        <p class="technical-condition__link body1">Мы будем бороться за каждый пункт, подберем оптимальное решение для наших клиентов</p>
-                    </article>         
-                </div>
+                <p class="our-services body1">первый шаг к электрофикации</p>                
                 <div class="technical-condition__flex">
                     <div class="technical-condition__grid">
                         <article class="technical-condition__card">
@@ -155,6 +142,17 @@
                         </article>
                     </div>
                 </div> 
+                <div class="technical-condition__important">
+                    <h3 class="technical-condition__info h3">Важная информация</h3>
+                    <article class="technical-condition__cardinfo">
+                        <p class="technical-condition__link body1">На сегодняшний день не действуют льготные тарифы на мощность в сетевых организациях</p>
+                        <p class="technical-condition__link body1">С 1 июля 2022 года стоимость подключения к электросетям по тарифу начинается от 3000 рублей за 1 КВт </p>
+                        <p class="technical-condition__link body1">С 1 июля 2022 года заявитель оплачивает до 70% стоимости строительства, реконструкции необходимых электросетевой организации для подключения заявителя</p>
+                        <p class="technical-condition__link body1">Не надо забывать о работах, которые необходимо выполнить заявителю согласно Тех. Условиям. Нередко они бывают дороже самого тарифа за мощность </p>
+                        <p class="technical-condition__link body1">Работы со своей стороны сетевая организация может выполнять до 2-х лет</p>
+                        <p class="technical-condition__link body1">Мы будем бороться за каждый пункт, подберем оптимальное решение для наших клиентов</p>
+                    </article>         
+                </div>
             </div>
         </section>
     </main>
@@ -183,5 +181,34 @@
         <!-- /container -->
     </footer>
     <!-- /footer -->
+    <div class="modal-window" id="call-window">
+        <div class="window__overlay" id="call-overlay"></div>
+        <div class="window__content">
+            <button class="window__close" id="close-window">
+                <span></span>
+            </button>
+            <h3 class="window__head h3">Оставьте заявку</h3>
+            <form action="" class="form">
+                <fieldset class="form__group">                    
+                    <input type="text" class="form__input" name="name" placeholder="ФИО">
+                </fieldset>
+                <fieldset class="form__group">                    
+                    <input type="tel" class="form__input" name="phone" placeholder="Номер телефона">
+                </fieldset>
+                <fieldset class="form__group">                    
+                    <input type="email" class="form__input" name="email" placeholder="Электронная почта">
+                </fieldset>
+                <fieldset class="form__group">       
+                    <textarea class="form__input message" name="" id="" cols="30" rows="10" placeholder="Оставьте сообщение"></textarea>
+                </fieldset>
+                <button class="form__submit body1 button" id="submit-btn">Отправить</button>
+                <p class="body3 form__caption">Нажимая на кнопку, Вы подтверждаете, что даете согласие на обработку Ваших персональных данных </p>
+            </form>
+            <!-- /form -->
+        </div>
+        <!-- /window__content -->
+        <script src="/js/modal-window.js"></script>
+    </div>
+    <!-- /modal-window -->
 </body>
 </html>

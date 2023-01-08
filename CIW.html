@@ -37,22 +37,20 @@
                 <nav class="header__menu">                
                     <ul class="menu__items">
                         <li class="menu__item">
-                            <a href="/main.html" class="menu__link subtitle hover-link">Главная</a>
+                            <a href="/main.html" class="menu__link subtitle hover-link ">Главная</a>
                         </li>                       
                         <li class="menu__item">
-                            <a href="/our-services.html" class="menu__link subtitle hover-link">Наши услуги</a>
+                            <a href="/our-services.html" class="menu__link subtitle hover-link ">Наши услуги</a>
                         </li>
                         <li class="menu__item">
-                            <a href="/technical-conditions.html" class="menu__link subtitle hover-link">Получение тех.условий</a>
+                            <a href="/technical-conditions.html" class="menu__link subtitle hover-link ">Получение тех.условий</a>
                         </li>
                         <li class="menu__item">
-                            <a href="/CIW.html" class="menu__link subtitle hover-link  active-page">СМР</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="/contacts.html" class="menu__link subtitle hover-link">Контакты</a>
-                        </li>
-                    </ul>
+                            <a href="/CIW.html" class="menu__link subtitle active-page">СМР</a>
+                        </li>                        
+                    </ul>                    
                 </nav>
+                <a href="#" class="header__btn button subtitle" id="call-request">Оставить заявку</a> 
                 <!-- /header__menu -->
             </div>          
         </div>  
@@ -108,7 +106,7 @@
                     <div class="CIW__card_items">
                         <h2 class="h2 card__head">Монтаж внутренних сетей</h2>
                         <h3 class="body1 card__link">Выполним монтаж проводки в квартирах, домах, промышленных объектах и объектах сельского хозяйства</h3>      
-                        <h3 class="body1 card__link">Соберем и расключим ру-0,4 кв, щитовые</h3>
+                        <h3 class="body1 card__link">Соберем и расключим РУ-0,4 кВ, щитовые</h3>
                         <h3 class="body1 card__link">Заменим старую проводку на новую</h3>                  
                     </div>
                 </article>                
@@ -140,5 +138,34 @@
         <!-- /container -->
     </footer>
     <!-- /footer -->    
+    <div class="modal-window" id="call-window">
+        <div class="window__overlay" id="call-overlay"></div>
+        <div class="window__content">
+            <button class="window__close" id="close-window">
+                <span></span>
+            </button>
+            <h3 class="window__head h3">Оставьте заявку</h3>
+            <form action="" class="form">
+                <fieldset class="form__group">                    
+                    <input type="text" class="form__input" name="name" placeholder="ФИО">
+                </fieldset>
+                <fieldset class="form__group">                    
+                    <input type="tel" class="form__input" name="phone" placeholder="Номер телефона">
+                </fieldset>
+                <fieldset class="form__group">                    
+                    <input type="email" class="form__input" name="email" placeholder="Электронная почта">
+                </fieldset>
+                <fieldset class="form__group">       
+                    <textarea class="form__input message" name="" id="" cols="30" rows="10" placeholder="Оставьте сообщение"></textarea>
+                </fieldset>
+                <button class="form__submit body1 button" id="submit-btn">Отправить</button>
+                <p class="body3 form__caption">Нажимая на кнопку, Вы подтверждаете, что даете согласие на обработку Ваших персональных данных </p>
+            </form>
+            <!-- /form -->
+        </div>
+        <!-- /window__content -->
+        <script src="/js/modal-window.js"></script>
+    </div>
+    <!-- /modal-window -->
 </body>
 </html>
