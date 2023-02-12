@@ -15,9 +15,17 @@
         <div class="container">    
             <div class="header__row">                
                     <a href="/main.html" class="logo">
-                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="80px" height="80px" viewBox="0 0 161.000000 164.000000"><g transform="translate(0.000000,164.000000) scale(0.100000,-0.100000)" fill="currentColor" stroke="none"><path d="M822 1005 c-161 -228 -292 -417 -292 -420 0 -9 63 5 74 16 16 15 126 11 126 -4 0 -7 -14 -91 -30 -186 -17 -95 -29 -178 -28 -183 2 -4 40 94 84 219 44 126 80 229 80 229 -1 1 -45 -6 -98 -16 -109 -19 -114 -17 -75 41 l23 34 134 17 c74 10 136 15 139 13 2 -3 -59 -140 -135 -306 -76 -166 -141 -307 -142 -313 -2 -6 33 44 77 112 45 68 81 127 81 131 0 5 41 94 90 199 50 105 90 194 90 197 0 3 -30 6 -67 6 -73 1 -211 15 -177 17 16 2 45 47 134 215 62 116 135 254 162 305 28 50 48 92 45 92 -2 0 -135 -187 -295 -415z"/><path d="M1005 860 c-77 -22 -147 -41 -155 -43 -8 -2 48 -1 124 1 117 4 138 3 130 -9 -4 -8 -33 -54 -64 -104 -70 -113 -76 -123 -63 -110 10 10 127 183 177 263 33 52 36 52 -149 2z"/></g></svg>
-                        <span class="logo__link">КЭС</span>                                        
-                    </a>         
+                        <picture class="logo">
+                            <source srcset="/assets/img/header/Logo.webp">
+                            <img src="/assets/img/header/Logo.webp" alt="">
+                        </picture>                                 
+                    </a>    
+                    <a href="/main.html" class="logo-mobile">
+                        <picture>
+                            <source srcset="/assets/img/header/Краткая для светлого фона.webp">
+                            <img src="/assets/img/header/Краткая для светлого фона.webp" alt="">
+                        </picture>                                                             
+                    </a>                 
                     <a href="#" class="mobile-menu" id="menu-request">
                         <svg width="28" height="22" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
@@ -77,12 +85,13 @@
                 <p class="our-service body1">первый шаг к электрофикации</p>                
                 <h1 class="h1 our-services__title-mobile" style="margin-bottom: 0;">Технические </h1>
                 <h2 class="h1 service__link-mobile">условия</h2>
-                <div class="technical-condition__flex">
-                   
+                <div class="technical-condition__flex">                   
                         <article class="technical-condition__card">
-                            <div class="technical-condition__icon">
-                                <svg fill="currentColor" height="80" width="80" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xml:space="preserve"><path d="m454 250 58-43-50-168-257 8-24 39-88-22L0 256l42 36-22 35a48 48 0 0 0 14 67 48 48 0 0 0 34 8 48 48 0 0 0 54 34 48 48 0 0 0 47 36c16 0 31-8 41-22l6-11 39 26a48 48 0 0 0 68-14c5-8 7-16 7-25a49 49 0 0 0 38-22c5-8 8-16 8-25a49 49 0 0 0 38-22c5-8 8-16 8-25a49 49 0 0 0 32-82zM224 80l214-7 36 121-48 36-184-120-52 79a16 16 0 0 1-26-17l60-92zM74 362a16 16 0 0 1-26-17l33-51a16 16 0 0 1 26 17l-33 51zm54 35a16 16 0 0 1-26-17l33-51a16 16 0 0 1 26 17l-33 51zm87-16-33 51a16 16 0 0 1-26-17l33-51a16 16 0 0 1 21-5c8 5 10 14 5 22zm217-89a16 16 0 0 1-21 5l-11-7-51-33-18 27 11 7 40 26c3 3 6 6 7 10s0 8-2 12-6 6-10 7-9 0-12-2l-51-33-18 27 40 26a16 16 0 0 1-17 27l-43-29-18 28 32 21a16 16 0 0 1-17 27l-39-26 9-13a49 49 0 0 0-48-75 48 48 0 0 0-54-35c-4-11-11-21-21-27a49 49 0 0 0-58 4l-21-18 70-145 51 12-26 40a49 49 0 0 0 82 52l34-51 176 114a16 16 0 0 1 4 22z"/></svg>
-                            </div>
+                            <figure class="technical-condition__icons">
+                                <div class="technical-condition__icon">
+                                    <svg fill="currentColor" height="80" width="80" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xml:space="preserve"><path d="m454 250 58-43-50-168-257 8-24 39-88-22L0 256l42 36-22 35a48 48 0 0 0 14 67 48 48 0 0 0 34 8 48 48 0 0 0 54 34 48 48 0 0 0 47 36c16 0 31-8 41-22l6-11 39 26a48 48 0 0 0 68-14c5-8 7-16 7-25a49 49 0 0 0 38-22c5-8 8-16 8-25a49 49 0 0 0 38-22c5-8 8-16 8-25a49 49 0 0 0 32-82zM224 80l214-7 36 121-48 36-184-120-52 79a16 16 0 0 1-26-17l60-92zM74 362a16 16 0 0 1-26-17l33-51a16 16 0 0 1 26 17l-33 51zm54 35a16 16 0 0 1-26-17l33-51a16 16 0 0 1 26 17l-33 51zm87-16-33 51a16 16 0 0 1-26-17l33-51a16 16 0 0 1 21-5c8 5 10 14 5 22zm217-89a16 16 0 0 1-21 5l-11-7-51-33-18 27 11 7 40 26c3 3 6 6 7 10s0 8-2 12-6 6-10 7-9 0-12-2l-51-33-18 27 40 26a16 16 0 0 1-17 27l-43-29-18 28 32 21a16 16 0 0 1-17 27l-39-26 9-13a49 49 0 0 0-48-75 48 48 0 0 0-54-35c-4-11-11-21-21-27a49 49 0 0 0-58 4l-21-18 70-145 51 12-26 40a49 49 0 0 0 82 52l34-51 176 114a16 16 0 0 1 4 22z"/></svg>
+                                </div>
+                            </figure>                            
                             <h3 class="h3 do-list__head">Мы поможем получить оптимальные <br> технические условия при</h3>
                             <p class="technical-condition__link body1">Новом технологическом подключении</p>
                             <p class="technical-condition__link body1">Увеличении мощности</p>
@@ -90,27 +99,29 @@
                             <p class="technical-condition__link body1">Модернизация схемы снабжения электроэнергией, когда изменяется точка подключения или категория надежности</p>
                         </article>
                         <article class="technical-condition__card">
-                            <div class="technical-condition__icon">
-                                <svg 
-                                    width="70"
-                                    height="70"
-                                    viewBox="0 0 400 400.00001"
-                                    id="svg2"
-                                    version="1.1"
-                                    inkscape:version="0.91 r13725"
-                                    sodipodi:docname="documents.svg"> 
-                                    <g
-                                        inkscape:label="Capa 1"
-                                        inkscape:groupmode="layer"
-                                        id="layer1"
-                                        transform="translate(0,-652.36216)">
-                                        <path       
-                                            d="m 47.500002,791.12976 0,261.23244 3.9941,0 21.005897,0 280.000001,0 0,-25 0,-375.00004 -166.0821,0 z m 152.917898,-113.7676 127.0821,0 0,350.00004 -255.000001,0 0,-222.23244 127.917901,0 z"
-                                            id="documents">    
-                                        </path>
-                                    </g>
-                                </svg>
-                            </div>
+                            <figure class="technical-condition__icons">
+                                <div class="technical-condition__icon">
+                                    <svg 
+                                        width="70"
+                                        height="70"
+                                        viewBox="0 0 400 400.00001"
+                                        id="svg2"
+                                        version="1.1"
+                                        inkscape:version="0.91 r13725"
+                                        sodipodi:docname="documents.svg"> 
+                                        <g
+                                            inkscape:label="Capa 1"
+                                            inkscape:groupmode="layer"
+                                            id="layer1"
+                                            transform="translate(0,-652.36216)">
+                                            <path       
+                                                d="m 47.500002,791.12976 0,261.23244 3.9941,0 21.005897,0 280.000001,0 0,-25 0,-375.00004 -166.0821,0 z m 152.917898,-113.7676 127.0821,0 0,350.00004 -255.000001,0 0,-222.23244 127.917901,0 z"
+                                                id="documents">    
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </figure>                     
                             <h3 class="h3 do-list__head">Получим технические условия</h3>
                             <p class="technical-condition__link body1">Выедем к вам на место</p>
                             <p class="technical-condition__link body1">Определимся от какой электросетевой компании вас подключить</p>
