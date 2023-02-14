@@ -108,8 +108,8 @@
                         </div>
                         <div class="slide">
                             <picture>
-                                <source srcset="/assets/img/main/Slider/Slider2.webp">
-                                <img src="/assets/img/main/Slider/Slider2.webp" alt="">
+                                <source srcset="/assets/img/main/Slider/Slider3.webp">
+                                <img src="/assets/img/main/Slider/Slider3.webp" alt="">
                             </picture>
                             <h2 class="slider__link h2">Качественная работа</h2>
                         </div>
@@ -274,20 +274,20 @@
                 <span></span>
             </button>
             <h3 class="window__head h3">Оставьте заявку</h3>
-            <form action="" class="form">
+            <form action="/php/send.php" method="post" class="form">
                 <fieldset class="form__group">                    
-                    <input type="text" class="form__input" name="name" placeholder="ФИО">
+                    <input type="text" class="form__input" name="name" placeholder="ФИО" required>
                 </fieldset>
                 <fieldset class="form__group">                    
-                    <input type="tel" class="form__input" name="phone" placeholder="Номер телефона">
+                    <input type="tel" class="form__input" name="phone" placeholder="Номер телефона" required>
                 </fieldset>
                 <fieldset class="form__group">                    
-                    <input type="email" class="form__input" name="email" placeholder="Электронная почта">
+                    <input type="email" class="form__input" name="email" placeholder="Электронная почта" required>
                 </fieldset>
                 <fieldset class="form__group">       
-                    <textarea class="form__input message" name="" id="" cols="30" rows="10" placeholder="Оставьте сообщение"></textarea>
+                    <textarea class="form__input message" name="message" id="" cols="30" rows="10" placeholder="Оставьте сообщение" required></textarea>
                 </fieldset>
-                <button class="form__submit body1 button" id="submit-btn">Отправить</button>
+                <input class="form__submit body1 button" type="submit" id="submit-btn"></input>
                 <p class="body3 form__caption">Нажимая на кнопку, Вы подтверждаете, что даете согласие на обработку Ваших персональных данных </p>
             </form>
             <!-- /form -->
@@ -317,6 +317,10 @@
       </div>
       <script src="/js/modal-menu.js"></script>  
       <!-- /modal-menu -->
+      <a href="#" class="bottom-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 1920 1920" fill="#444444"><path fill-rule="evenodd" d="m.08 1351.937 176.13 176.13 783.988-783.864 783.74 783.864 176.129-176.13-959.87-960.118z"/></svg>
+      </a>
+      <!-- /bottom-to-top -->
     <script src="/js/JQuery.js"></script>
     <script src="/slick/slick.min.js"></script>
     <script src="/js/main.js"></script>

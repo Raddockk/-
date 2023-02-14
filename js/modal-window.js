@@ -3,7 +3,6 @@ const callRequestBtn = document.querySelector('#call-request');
 const callRequestBtn2 = document.querySelector('#call-request_2');
 const callWindowClose = callWindow.querySelector('#close-window');
 const callRequestOverlay = callWindow.querySelector('#call-overlay');
-const callSubmitBtn = callWindow.querySelector('#submit-btn');
 
 function handleOpenWindow(e) {
   callWindow.classList.add('modal-window_active');
@@ -18,5 +17,4 @@ function handleCloseWindow(e) {
 callRequestBtn.addEventListener('click', handleOpenWindow);
 callWindowClose.addEventListener('click', handleCloseWindow);
 callRequestOverlay.addEventListener('click', handleCloseWindow);
-callSubmitBtn.addEventListener('click', handleCloseWindow);
 callRequestBtn2.addEventListener('click', handleOpenWindow);
