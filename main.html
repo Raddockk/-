@@ -274,7 +274,7 @@
                 <span></span>
             </button>
             <h3 class="window__head h3">Оставьте заявку</h3>
-            <form action="/php/send.php" method="post" class="form">
+            <form action="/php/send.php" method="POST" class="form">
                 <fieldset class="form__group">                    
                     <input type="text" class="form__input" name="name" placeholder="ФИО" required>
                 </fieldset>
@@ -285,7 +285,7 @@
                     <input type="email" class="form__input" name="email" placeholder="Электронная почта" required>
                 </fieldset>
                 <fieldset class="form__group">       
-                    <textarea class="form__input message" name="message" id="" cols="30" rows="10" placeholder="Оставьте сообщение" required></textarea>
+                    <textarea class="form__input message" name="message" placeholder="Оставьте сообщение" required></textarea>
                 </fieldset>
                 <input class="form__submit body1 button" type="submit" id="submit-btn"></input>
                 <p class="body3 form__caption">Нажимая на кнопку, Вы подтверждаете, что даете согласие на обработку Ваших персональных данных </p>

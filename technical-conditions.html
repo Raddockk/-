@@ -184,20 +184,20 @@
                 <span></span>
             </button>
             <h3 class="window__head h3">Оставьте заявку</h3>
-            <form action="" class="form">
+            <form action="/php/send.php" method="POST" class="form">
                 <fieldset class="form__group">                    
-                    <input type="text" class="form__input" name="name" placeholder="ФИО">
+                    <input type="text" class="form__input" name="name" placeholder="ФИО" required>
                 </fieldset>
                 <fieldset class="form__group">                    
-                    <input type="tel" class="form__input" name="phone" placeholder="Номер телефона">
+                    <input type="tel" class="form__input" name="phone" placeholder="Номер телефона" required>
                 </fieldset>
                 <fieldset class="form__group">                    
-                    <input type="email" class="form__input" name="email" placeholder="Электронная почта">
+                    <input type="email" class="form__input" name="email" placeholder="Электронная почта" required>
                 </fieldset>
                 <fieldset class="form__group">       
-                    <textarea class="form__input message" name="" id="" cols="30" rows="10" placeholder="Оставьте сообщение"></textarea>
+                    <textarea class="form__input message" name="message" placeholder="Оставьте сообщение" required></textarea>
                 </fieldset>
-                <button class="form__submit body1 button" id="submit-btn">Отправить</button>
+                <input class="form__submit body1 button" type="submit" id="submit-btn"></input>
                 <p class="body3 form__caption">Нажимая на кнопку, Вы подтверждаете, что даете согласие на обработку Ваших персональных данных </p>
             </form>
             <!-- /form -->

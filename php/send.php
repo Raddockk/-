@@ -1,31 +1,36 @@
 <?php
 
-    $name = $_POST['name'];
-    $phone = $_POST['phone'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];  
-
-    $name = htmlspecialchars($name);
-    $phone = htmlspecialchars($phone);
-    $email = htmlspecialchars($email);
-    $message = htmlspecialchars($message);
-
-    $name = urldecode($name);
-    $phone = urldecode($phone);
-    $email = urldecode($email);
-    $message = urldecode($message);
-    
-    $name = trim($name);
-    $phone = trim($phone);
-    $email = trim($email);
-    $message = trim($message);
-    
     $to = "d.shvarev@mail.ru";
     $from = trim($_POST['email']);
 
-    $headers = "От: $from" . "\r\n" .
-    "X-Mailer: PHP/" . phpversion(); 
+    $name = htmlspecialchars($_POST['name']);
+    $name = urldecode($name);
+    $name = trim($name);
 
-    
+
+    $message = htmlspecialchars($_POST['message']);
+    $message = urldecode($message);
+    $message = trim($message);
+
+    $phone = htmlspecialchars($_POST['phone']);
+    $phone = urldecode($phone);
+    $phone = trim($phone);
+
+    $headers = "От: $name" . "\r\n" . 
+    "Почта: $from" . "\r\n" .
+    "Телефон: $phone" . "\r\n" . 
+    "X-Mailer: PHP/" . phpversion();
+
+    if(mail("d.shvarev@mail.ru",
+	    "Новое письмо с сайта:",
+	    "ФИО: ".$name."\r\n ".
+	   "Телефон: ".$phone."\r\n".
+	    "Email: ".$from."\r\n" .
+	    "Причина обращения: ".$message."\r\n")
+) {
+        echo('Письмо успешно отправленно');
+    } else {
+        echo('Возможна допущена ошибка, перепроверьте даные');
+    }   
 
 ?>
