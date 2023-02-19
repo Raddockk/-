@@ -1044,13 +1044,7 @@ svg {
   }
 }
 
-@media (max-width:1101px) {
-  .slider__link,
-  .slider__h1 {
-    padding-left: 165px;
-    padding-top: 100px;
-  }
-
+@media (max-width:1127px) {
   .CIW__head {
     display: none;
   }
@@ -1065,6 +1059,14 @@ svg {
     color: var(--ui-color);
     margin-top: 0;
   }
+}
+
+@media (max-width:1101px) {
+  .slider__link,
+  .slider__h1 {
+    padding-left: 165px;
+    padding-top: 100px;
+  } 
 }
 
 @media (max-width:1095px) {
@@ -1115,8 +1117,7 @@ svg {
   }
 }
 
-@media (max-width:890px) {
-
+@media (max-width:899px) {
   .CIW__title-tablet {
     display: none;
   }
@@ -1131,6 +1132,9 @@ svg {
     justify-content: center;
     margin:0;
   }
+}
+
+@media (max-width:890px) {  
 
   .slider__h1,
   .slider__link {
