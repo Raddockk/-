@@ -439,8 +439,10 @@ svg {
 }
 
 .do-list__link {
-  margin-left: 25px;
-  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  /* margin-left: 25px;
+  margin-top: 30px; */
 }
 
 .card__btn {
@@ -1144,11 +1146,16 @@ svg {
 }
 
 @media(max-width:889px) {
-  .do-list-left {
-    border-top-right-radius: 20px;
-  }
-  .do-list-center {
-    border-top-left-radius: 20px;
+  .do-list-left,
+  .do-list-center,
+  .do-list-right {
+    border-radius: 20px;
+  }  
+
+  .do-list-left .do-list__head,
+  .do-list-center .do-list__head,
+  .do-list-right .do-list__head {
+    margin-bottom: 0;
   }
 }
 
